@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgb(235, 235, 173);
+  }
+  
+  .heading {
+    text-align: center;
+  }
+  .form-control {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .form-control input {
+    display: block;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #d19ae6;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(to left, #1e07a0, #d25536);
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    margin-top: 40px;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #9471a2;
+    cursor: pointer;
+  }
+  
+  .form-control.success input {
+    border-color: #2bb344;
+  }
+  
+  .form-control.success i.fa-check-circle {
+    color: #2bb344;
+    visibility: visible;
+  }
+  
+  .form-control.failure input {
+    border-color: #f84339;
+  }
+  
+  .form-control i {
+    position: absolute;
+    top: 30px;
+    right: 9px;
+    visibility: hidden;
+  }
+  
+  small {
+    color: #f45f57;
+    visibility: hidden;
+  }
+  
+  .form-control.failure small {
+    visibility: visible;
+  }
+  
+  .form-control.failure i.fa-exclamation-circle {
+    color: #e22c22;
+    visibility: visible;
+  }
